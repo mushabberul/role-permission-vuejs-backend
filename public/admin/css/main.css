@@ -1,0 +1,29 @@
+.module-header.d-flex.justify-content-between.align-items-center.custom-design {
+    margin-right: 25px;
+}
+
+button.align-middle {
+    border: none;
+    background: none;
+}
+
+i.bx.bx-power-off {
+    padding-left: 2px;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+}
+
+i.bx.bx-trash {
+    padding-left: 22px;
+}
+
+select#dt-length-0 {
+    margin-right: 6px;
+}
+
+.ml-5 {
+    margin-left: 20px;
+}
