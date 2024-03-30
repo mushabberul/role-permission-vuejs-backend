@@ -37,13 +37,13 @@
     <link rel="stylesheet" href="//cdn.datatables.net/2.0.3/css/dataTables.dataTables.min.css">
     @stack('style')
 
-    <link rel="stylesheet" href="{{ asset('admin') }}/css/main.css" />
-    <!-- Page CSS -->
+    @vite('resources/css/app.css')
 
     <!-- Helpers -->
     <script src="{{ asset('admin') }}/vendor/js/helpers.js"></script>
     <script src="{{ asset('admin') }}/js/config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="{{ asset('admin') }}/css/main.css" />
 </head>
 
 <body>
@@ -67,7 +67,8 @@
                 <div class="content-wrapper">
                     <!-- Content -->
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        @yield('content')
+                        {{-- @yield('content') --}}
+                        <div id="content"></div>
                     </div>
                     <!-- / Content -->
 
@@ -111,7 +112,7 @@
     <script src="{{ asset('admin') }}/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="{{ asset('admin') }}/vendor/js/menu.js"></script>
 
-    <!-- endbuild -->
+    @vite('resources/js/app.js')
 
     <!-- Vendors JS -->
     <script src="{{ asset('admin') }}/vendor/libs/apex-charts/apexcharts.js"></script>
